@@ -10,6 +10,8 @@ export default function EventPage({ evt }) {
     console.log("delete");
   };
 
+  console.log(evt.id);
+
   return (
     <Layout>
       <div className={styles.event}>
