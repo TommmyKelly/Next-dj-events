@@ -12,6 +12,9 @@ export default function EventPage({ evt }) {
   const router = useRouter();
   const deleteEvent = async (e) => {
     if (confirm("Are you sure")) {
+      // const resImage = await fetch(`${API_URL}/upload/${evt.id}`, {
+      //   method: "DELETE",
+      // });
       const res = await fetch(`${API_URL}/events/${evt.id}`, {
         method: "DELETE",
       });
